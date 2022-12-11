@@ -1,7 +1,13 @@
 
 public class Compra {
   private float oferta;
-  private float dataOferta;
+  private String dataOferta;
+
+
+  public Compra(float varOferta, String varDataOferta){
+    oferta = varOferta;
+    dataOferta = varDataOferta;
+  }
 
 
   public float getOferta() {
@@ -11,11 +17,15 @@ public class Compra {
     this.oferta = oferta;
   }
 
-  public float getDataOferta() {
+  public String getDataOferta() {
     return dataOferta;
   }
-  public void setDataOferta(float dataOferta) {
+  public void setDataOferta(String dataOferta) {
     this.dataOferta = dataOferta;
+  }
+  @Override
+  public String toString() {
+    return "Oferta: " + oferta + "Data da Oferta: " + dataOferta;
   }
 
 }

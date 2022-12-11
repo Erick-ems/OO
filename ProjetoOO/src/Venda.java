@@ -1,9 +1,15 @@
 
 public class Venda {
   private float precoVenda;
-  private float dataVenda;
+  private String dataVenda;
   private int quantidade;
 
+
+  public Venda(float varPrecoVenda, String varDataVenda, int varQuantidade) {
+    precoVenda = varPrecoVenda;
+    dataVenda = varDataVenda;
+    quantidade = varQuantidade;
+  }
 
   public float getPrecoVenda() {
     return precoVenda;
@@ -12,10 +18,10 @@ public class Venda {
     this.precoVenda = precoVenda;
   }
 
-  public float getDataVenda() {
+  public String getDataVenda() {
     return dataVenda;
   }
-  public void setDataVenda(float dataVenda) {
+  public void setDataVenda(String dataVenda) {
     this.dataVenda = dataVenda;
   }
 
@@ -26,4 +32,8 @@ public class Venda {
     this.quantidade = quantidade;
   }
 
+  @Override
+  public String toString() {
+    return "Preco de Venda:" + this.precoVenda + "Data de venda:" + this.dataVenda + "Quantidade:" + this.quantidade;
+  }
 }

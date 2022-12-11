@@ -5,6 +5,8 @@ public class PessoaFisica extends Pessoa {
   private int idade;
   private String rg;
 
+  
+
   public String getNome() {
     return nome;
   }

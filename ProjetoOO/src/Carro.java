@@ -19,8 +19,9 @@ public class Carro {
     quilometragem = varQuilometragem;
   }
 
+  @Override
   public String toString(){
-    return "Nome do carro: " + nome;
+    return "Carro" + this.nome + "Ano: " + this.ano + "Marca:" + this.marca + "Quilometragem: " + this.quilometragem + "Categoria: " + this.categoria + "Estilo:" + this.estilo;
   }
 
 
