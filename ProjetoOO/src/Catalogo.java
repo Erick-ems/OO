@@ -3,6 +3,16 @@ public class Catalogo {
   private String modelo;
   private long preco;
 
+
+  public Catalogo(String varModelo, long varPreco) {
+    modelo = varModelo;
+    preco = varPreco;
+  }
+    @Override
+    public String toString(){
+      return "Modelo:" + this.modelo + ", Preco:" + this.preco;
+    }
+
   public String getModelo() {
     return modelo;
   }
