@@ -10,7 +10,7 @@ public class Catalogo {
   }
     @Override
     public String toString(){
-      return "Modelo:" + this.modelo + ", Preco:" + this.preco;
+      return " Modelo: " + this.modelo + " Preco: " + this.preco;
     }
 
   public String getModelo() {

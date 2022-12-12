@@ -34,6 +34,6 @@ public class Venda {
 
   @Override
   public String toString() {
-    return "Preco de Venda:" + this.precoVenda + "Data de venda:" + this.dataVenda + "Quantidade:" + this.quantidade;
+    return " Preco de Venda: " + this.precoVenda + " Data de venda: " + this.dataVenda + " Quantidade: " + this.quantidade;
   }
 }

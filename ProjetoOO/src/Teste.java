@@ -10,10 +10,12 @@ public class Teste {
   public static void main(String[] args) {
 
 
+    varPessoaFisica = new PessoaFisica("JOAOB|","000.000.000.00|", 18, "0000000" );
+    varPessoaJuridica = new PessoaJuridica("CARPLAY|", "9999999999999");
 
+    varCatalogo = new Catalogo("seda|", 8);
+    varCarro = new Carro("celtinha|",2008, "|chevrolet|", "economico|", "hatch|", 19000 );
 
-    varCatalogo = new Catalogo("sedã", 8);
-    varCarro = new Carro("celtinha",2008, "chevrolet", "economico", "hatch", 19000 );
     varVenda = new Venda(1800, "14/10/1900", 1555);
     varCompra = new Compra(1500, "15/10/1900");
 
@@ -22,6 +24,7 @@ public class Teste {
     System.out.println(varVenda.toString());
     System.out.println(varCatalogo.toString());
     System.out.println(varCarro.toString());
-
+    System.out.println(varPessoaFisica.toString());
+    System.out.println(varPessoaJuridica.toString());
   }
 }

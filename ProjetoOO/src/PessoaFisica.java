@@ -5,7 +5,17 @@ public class PessoaFisica extends Pessoa {
   private int idade;
   private String rg;
 
-  
+  public PessoaFisica(String varNome, String varCpf, int varIdade, String varRg) {
+    nome = varNome;
+    cpf = varCpf;
+    idade = varIdade;
+    rg = varRg;
+  }
+
+  @Override
+  public String toString() {
+    return " Pessoa Fisica: " + this.nome + " Cpf: " + this.cpf + " idade: " + this.idade + " rg: " + this.rg;
+  }
 
   public String getNome() {
     return nome;

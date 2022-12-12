@@ -21,7 +21,7 @@ public class Carro {
 
   @Override
   public String toString(){
-    return "Carro" + this.nome + "Ano: " + this.ano + "Marca:" + this.marca + "Quilometragem: " + this.quilometragem + "Categoria: " + this.categoria + "Estilo:" + this.estilo;
+    return " Carro " + this.nome + " Ano: " + this.ano + " Marca: " + this.marca + " Quilometragem: " + this.quilometragem + " Categoria: " + this.categoria + " Estilo: " + this.estilo;
   }
 
 

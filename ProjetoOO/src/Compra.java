@@ -25,7 +25,7 @@ public class Compra {
   }
   @Override
   public String toString() {
-    return "Oferta: " + oferta + "Data da Oferta: " + dataOferta;
+    return " Oferta: " + oferta + " Data da Oferta: " + dataOferta;
   }
 
 }
