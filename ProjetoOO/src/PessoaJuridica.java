@@ -4,14 +4,18 @@ public class PessoaJuridica extends Pessoa {
   private String nomeFantasia;
 
 
-  public PessoaJuridica(String varNomeFantasia, String varCnpj) {
+  public PessoaJuridica(String varNomeFantasia, String varCnpj, String varCep, int varTelefone, String varEmail) {
     cnpj = varCnpj;
     nomeFantasia = varNomeFantasia;
+    cep = varCep;
+    telefone = varTelefone;
+    email = varEmail;
+
   }
 
   @Override
   public String toString(){
-    return "Nome Fantasia: " + nomeFantasia + " Cnpj: " + cnpj;
+    return "Nome Fantasia: " + this.nomeFantasia + " Cnpj: " + this.cnpj + " Cep: " + this.cep + " Telefone: " + this.telefone + " Email: " + this.email;
   }
 
   public String getCnpj() {

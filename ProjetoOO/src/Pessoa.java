@@ -1,7 +1,7 @@
 public abstract class Pessoa {
-  private String cep;
-  private int telefone;
-  private String email;
+  protected String cep;
+  protected int telefone;
+  protected String email;
 
   public String getcep() {
     return cep;

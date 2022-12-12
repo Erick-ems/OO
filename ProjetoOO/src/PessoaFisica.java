@@ -5,16 +5,19 @@ public class PessoaFisica extends Pessoa {
   private int idade;
   private String rg;
 
-  public PessoaFisica(String varNome, String varCpf, int varIdade, String varRg) {
+  public PessoaFisica(String varNome, String varCpf, int varIdade, String varRg, String varCep, int varTelefone, String varEmail) {
     nome = varNome;
     cpf = varCpf;
     idade = varIdade;
     rg = varRg;
+    cep = varCep;
+    telefone = varTelefone;
+    email = varEmail;
   }
 
   @Override
   public String toString() {
-    return " Pessoa Fisica: " + this.nome + " Cpf: " + this.cpf + " idade: " + this.idade + " rg: " + this.rg;
+    return " Pessoa Fisica: " + this.nome + " Cpf: " + this.cpf + " idade: " + this.idade + " rg: " + this.rg + " Cep: " + this.cep + " Telefone: " + this.telefone + " Email: " + this.email;
   }
 
   public String getNome() {
